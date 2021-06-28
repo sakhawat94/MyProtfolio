@@ -10,6 +10,19 @@ body {
     display: inline-block;
     box-sizing: border-box;
 }
+.nav-part-menu {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.nav-part-logo {
+    width: 19%;
+    box-sizing: border-box;
+}
+
+nav.navbar-wrapper.container-fluid.bg-dark {
+    background: rgba(0,0,0,0.1)!important;
+}
 ul.navbar-menu {
     list-style: none;
     text-align: right;
@@ -37,13 +50,24 @@ ul.navbar-menu li a:hover{
     border-bottom: 5px solid mediumaquamarine;
     padding-bottom: 10px;
 }
-
-.nav-part-menu {
-    width: 80%;
-    box-sizing: border-box;
+h3.banner-subtitle {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
-.nav-part-logo {
-    width: 19%;
-    box-sizing: border-box;
+.banner-heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    margin: 0;
+    color: darkorange;
+    text-shadow: 2px 3px 4px rgb(0 0 0 / 50%);
+}
+
+h6.banner-sbutitle-1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bolder;
 }
