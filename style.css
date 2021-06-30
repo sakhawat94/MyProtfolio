@@ -2,6 +2,14 @@ body {
     margin: 0;
     padding: 0;
 }
+.header-section-wrapper{
+    position: relative;
+}
+nav.navbar-wrapper.container-fluid.bg-dark {
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+}
 .nav-part.nav-part-logo img {
     width: 250px;
     max-width: 100%;
@@ -70,4 +78,7 @@ h6.banner-sbutitle-1 {
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: bolder;
+}
+.banner-section-wrapper {
+    position: relative;
 }
