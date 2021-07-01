@@ -82,3 +82,21 @@ h6.banner-sbutitle-1 {
 .banner-section-wrapper {
     position: relative;
 }
+.banner-part-img img {
+    max-width: 100%;
+}
+section.container-fluid.banner-bg {
+    position: relative;
+    background-color: hotpink;
+}
+
+section.container-fluid.banner-bg:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: white;
+    z-index: 0;
+}

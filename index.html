@@ -20,8 +20,8 @@
                 </div>
                 <div class="nav-part nav-part-menu">
                     <ul class="navbar-menu">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about me</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#about-section">about me</a></li>
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">experience</a></li>
                         <li><a href="#">contact</a></li>
@@ -29,22 +29,30 @@
                 </div> 
             </div>
         </nav>
-        <section class="container-fluid">
-            <div class="container vh-100 banner-section-wrapper">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 banner-details-wrap">
-                        <h3 class="banner-subtitle">hello i'm</h3>
-                        <h1 class="banner-heading">sakhawat hossen</h1>
-                        <h6 class="banner-sbutitle-1">web designer and developer</h6>
-                    </div>
-                    <div class="col-sm-12 col-md-6 banner-img-wrap">
-                        <img src="assets/img/img-final1.png" alt="" srcset="">
+        <section class="container-fluid banner-bg">
+            <div class="container banner-section-wrapper">
+                <div class="row vh-100 align-items-center">
+                    <div class="col-sm-12 col-md-12 banner-part banner-part-details text-center">
+                        <div class="banner-details-wrap">
+                            <h3 class="banner-subtitle">hey! i am</h3>
+                            <h1 class="banner-heading">sakhawat hossen</h1>
+                            <h6 class="banner-sbutitle-1">i'm experienced in <span id="MyExperience"></span></h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </header>
     <!-- header section end -->
+    <!-- about section start -->
+    <section class="container-fluid" id="about-section">
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
 
 
 
@@ -54,6 +62,18 @@
 
 
 
-    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script>        
+    var typed3 = new Typed('#MyExperience', {
+        strings: ['web design and development','wordpress theme customization', 'photography', 'graphics design'],
+        typeSpeed: 50,
+        backSpeed: 150,
+        smartBackspace: false, // this is a default
+        loop: true
+    });
+        
+    </script>
 </body>
 </html>
