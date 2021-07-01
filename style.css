@@ -82,3 +82,6 @@ h6.banner-sbutitle-1 {
 .banner-section-wrapper {
     position: relative;
 }
+.banner-part-img img {
+    max-width: 100%;
+}
