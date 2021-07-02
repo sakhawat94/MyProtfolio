@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/app.css">
     <script src="https://kit.fontawesome.com/bca7d62192.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>MyProtfolio</title>
 </head>
 <body>
+    <!-- navbar section start -->
+    <nav class="navbar-wrapper container-fluid bg-dark">
+        <div class="container">
+            <div class="nav-part nav-part-logo">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" srcset=""></a>
+            </div>
+            <div class="nav-part nav-part-menu">
+                <ul class="navbar-menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#about-section">about me</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">experience</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    <!-- navbar secction end -->
     <!-- header section start -->
     <header class="header-section-wrapper">
-        <nav class="navbar-wrapper container-fluid bg-dark">
-            <div class="container">
-                <div class="nav-part nav-part-logo">
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" srcset=""></a>
-                </div>
-                <div class="nav-part nav-part-menu">
-                    <ul class="navbar-menu">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="#about-section">about me</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">experience</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div> 
-            </div>
-        </nav>
         <section class="container-fluid banner-bg">
             <div class="container banner-section-wrapper">
                 <div class="row vh-100 align-items-center">
@@ -47,8 +51,39 @@
     <!-- about section start -->
     <section class="container-fluid" id="about-section">
         <div class="container">
-            <div class="row">
-                
+            <div class="row d-flex align-items-center vh-100">
+                <div class="col-sm-12 col-md-6 about-part about-part-details">
+                    <div class="aboutme-details">
+                        <h3 class="about-heading">aobut me</h3>
+                        <p class="aboutme-tag">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <ul class="about-me">
+                                    <li><span>name :</span></li>
+                                    <li><span>date of birth :</span></li>
+                                    <li><span>address :</span></li>
+                                    <li><span>zip code :</span></li>
+                                    <li><span>e-mail :</span></li>
+                                    <li><span>phone :</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-9">
+                                <ul class="about-me">
+                                    <li><span>md. sakhawat hossen</span></li>
+                                    <li><span>20<sup>th</sup> october, 1994</span></li>
+                                    <li><span>bara para, krishnapur, cumilla</span></li>
+                                    <li><span>3500</span></li>
+                                    <li><span>sakhawat9406@gmail.com</span></li>
+                                    <li><span>+880 193 1003 806, +880 161 1003 806</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm download-cv">download CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 about-part about-part-img">
+                    <img src="assets/img/img-final1.png" class="img-fluid" alt="">
+                </div>                
             </div>
         </div>
     </section>
