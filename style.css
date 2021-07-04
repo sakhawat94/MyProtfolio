@@ -109,16 +109,25 @@ section.container-fluid.banner-bg:before {
     background: white;
     z-index: 0;
 }
-ul.about-me {
-    list-style: none;
-    padding: 0;
+.aboutme-tagline{
+    line-height: 150%;
+    font-size: 20px;
+    color: gray;
+}
+ul.about-me{
     margin: 0;
-    text-transform: capitalize;
+    padding: 0;
 }
 ul.about-me li {
-    line-height: 200%;
+    display: flex;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 220%;
+}
+
+ul.about-me li span:nth-child(1) {
+    width: 30%;
+    text-transform: capitalize;
 }
 h3.about-heading {
     font-size: 40px;
