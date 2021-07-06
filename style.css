@@ -1,64 +1,72 @@
 body {
     margin: 0;
     padding: 0;
-}
-.header-section-wrapper{
     position: relative;
 }
-nav.navbar-wrapper.container-fluid.bg-dark {
+
+nav.navbar-wrapper{
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 99999;
 }
+
 .nav-part.nav-part-logo img {
-    width: 200px;
+    width: 480px;
     max-width: 100%;
 }
-.nav-part {
-    display: inline-block;
-    box-sizing: border-box;
+i.fas.fa-bars {
+    font-size: 30px;
+    color: orange;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 70%);
+    position: absolute;
+    top: 20px;
 }
-.nav-part-menu {
-    width: 80%;
-    box-sizing: border-box;
+.container-fluid.bg-light.navbar-menu-section {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.container-fluid.bg-light.navbar-menu-section {
+    text-align: center;
 }
 
-.nav-part-logo {
-    width: 19%;
-    box-sizing: border-box;
-}
-
-nav.navbar-wrapper.container-fluid.bg-dark {
-    background: rgba(0,0,0,0.1)!important;
-}
 ul.navbar-menu {
     list-style: none;
-    text-align: right;
     padding: 0;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 30%;
+    text-align: left;
 }
 
 ul.navbar-menu li {
-    display: inline-block;
-}
-
-ul.navbar-menu li {
-    margin-right: 5%;
-}
-
-ul.navbar-menu li a{    
+    font-size: 35px;
     text-transform: uppercase;
+    line-height: 150%;
+    letter-spacing: -1px;
+}
+
+ul.navbar-menu li a {
     text-decoration: none;
-    color: mediumaquamarine;
-    font-weight: bolder;
-    transition: 900ms;
+    color: orange;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 0.755);
+    font-weight: 700;
+    transition: 900ms ease-in-out;
 }
 ul.navbar-menu li a:hover{
-    border-bottom: 5px solid mediumaquamarine;
-    padding-bottom: 10px;
+    border-left: 5px solid black;
+    padding-left: 50px;
+    border-image-slice: 50%;
 }
+i.fas.fa-times-circle {font-size: 35px;position: absolute;top: 20px;right: 10%;text-align: center;color: red;transition: 900ms ease;width: 60px;}
 
+i.fas.fa-times-circle:hover {
+    transform: scale(1.7);
+}
 h3.banner-subtitle {
     text-transform: uppercase;
     font-size: 25px;
@@ -120,12 +128,12 @@ ul.about-me li {
     display: flex;
     font-style: italic;
     font-weight: 600;
-    line-height: 220%;
+    line-height: 220%;    
+    text-transform: capitalize;
 }
 
 ul.about-me li span:nth-child(1) {
     width: 30%;
-    text-transform: capitalize;
 }
 h3.about-heading {
     font-size: 40px;
@@ -137,4 +145,8 @@ a.btn.btn-primary.btn-sm.download-cv {
     margin: 15px 0px;
     width: 30%;
     text-transform: uppercase;
+}
+.about-part-img img {
+    display: block;
+    margin: 0 auto;
 }
