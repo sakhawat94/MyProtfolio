@@ -14,25 +14,23 @@ nav.navbar-wrapper{
     width: 480px;
     max-width: 100%;
 }
-i.fas.fa-bars {
+#humberger-open-trigger a {
     font-size: 30px;
     color: orange;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 70%);
     position: absolute;
     top: 20px;
+    z-index: 99;
 }
-.container-fluid.bg-light.navbar-menu-section {
+.navbar-menu-section {
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
+    text-align: center;
     right: 0;
     bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-.container-fluid.bg-light.navbar-menu-section {
-    text-align: center;
+    display: none;
 }
 
 ul.navbar-menu {
@@ -149,4 +147,22 @@ a.btn.btn-primary.btn-sm.download-cv {
 .about-part-img img {
     display: block;
     margin: 0 auto;
+}
+div#scroll-down-trigger {
+    background: #ECF0FF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -25px;
+    transform: rotate(45deg);
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.3);
+}
+
+div#scroll-down-trigger a i.fas.fa-long-arrow-alt-down {
+    transform: rotate(-45deg);
+    color: black;
+    text-align: center;
+    font-size: 30px;
 }

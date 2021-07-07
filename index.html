@@ -15,10 +15,10 @@
 <body>
     <!-- navbar section start -->
     <nav class="navbar-wrapper">
-        <div class="offset-10 col-1">
-            <i id="humberger-open" class="fas fa-bars"></i>
+        <div class="offset-10 col-1" id="humberger-open-trigger">
+            <a id="humberger-open" href="#"><i class="fas fa-bars"></i></a>
         </div>
-        <div class="container-fluid bg-light navbar-menu-section">
+        <div class="container-fluid bg-light navbar-menu-section" id="navbar-section-wrapper">
             <div class="container">
                     <div class="row">
                         <i id="humberger-close" class="fas fa-times-circle"></i>
@@ -52,6 +52,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="scroll-down-trigger">
+                <a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
             </div>
         </section>
     </header>
@@ -124,6 +127,24 @@
     <script src="assets/js/typed.min.js"></script>
     <script> 
         jQuery(document).ready(function(){
+            jQuery('#humberger-open').click(function(){
+                    jQuery('#navbar-menu-section').show(function(){
+                      
+                    });
+                });
+
+                jQuery('.js-menu-trigger-close').click(function(){
+                    jQuery('#primary-menu').hide(function(){
+
+                    });
+                });
+
+                jQuery('#scroll-down-trigger').click(function(){
+                    var $targetsection = jQuery ('#about-section');
+                    jQuery('body,html').animate({
+                       scrollTop: $targetsection.offset().top-50
+                    });                   
+                });
             var typed3 = new Typed('#MyExperience', {
             strings: ['web design and development','wordpress theme customization', 'photography', 'graphics design'],
             typeSpeed: 50,
