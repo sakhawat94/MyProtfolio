@@ -49,14 +49,63 @@
                     <div class="w-100">
                         <h4 class="banner-wellcome-tag">Hey! i am</h4>
                         <h1 class="banner-heading">sakhawat hossen</h1>
-                        <h3 class="banner-experience">i'm skilled <span id="MyExperience"></span></h3>
+                        <h3 class="banner-experience">i have expertise in <span id="MyExperience"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="scroll-down-trigger" href="#"><i class="fas fa-angle-double-down"></i></a>
+    </section>
+    <!-- hero name banner end -->
+    <!-- about me section start -->
+    <section id="about-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 about-part about-part-details">
+                        <h1 class="display-3 aboutMe-heading">about me</h1>
+                        <h5 class="aboutMe-tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut blanditiis recusandae, temporibus reiciendis dolore error illum quasi, ducimus ut earum fugit in quisquam nihil.</h5>
+                        <ul class="about-me">
+                            <li class="li"><span>Name:</span><span>md.sakhawat hossen</span></li>
+                            <li class="li"><span>Date of birth:</span><span>20<sup>th</sup> october, 1994</span></li>
+                            <li class="li"><span>address:</span><span>bara para, comilla, bangladesh</span></li>
+                            <li class="li"><span>zip:</span><span>3500</span></li>
+                            <li class="li"><span>e-mail:</span><span>sakhawat9406@gmail.com</span></li>
+                            <li class="li"><span>phone:</span><span>+880 1931-003806</span></li>
+                            <a class="download-CVtrigger" href="assets/cv/SakhawatResume.pdf" download>download cv</a>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 about-part about-part-image bg-light">
+                        <img src="assets/img/img1.png" alt="" class="aboutMe-image img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- hero name banner end -->
-
+    <!-- about me section end -->
+    <section class="language-experience">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row d-flex align-items-center pt-5 pb-5">
+                    <div class="col">
+                        <img src="assets/icons/mangodb.png" class="img-fluid" alt="" srcset="">
+                    </div>
+                    <div class="col">
+                        <img src="assets/icons/express-js.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="assets/icons/react-logo.png" class="img-fluid" alt="" srcset="">
+                    </div>
+                    <div class="col">
+                        <img src="assets/icons/nodejs.png" class="img-fluid" alt="" srcset="">
+                    </div>
+                    <div class="col">
+                        <img src="assets/icons/php-icon.png" class="img-fluid" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -92,14 +141,14 @@
             jQuery('.humberger-close-trigger').click(function(){
                 jQuery('.humberger-menu-wrapper').hide('slow');
             });
-            jQuery('#scroll-down-trigger').click(function(){
+            jQuery('.scroll-down-trigger').click(function(){
                 var $targetsection = jQuery ('#about-section');
                 jQuery('body,html').animate({
                     scrollTop: $targetsection.offset().top-50
                 });                   
             });
             var typed3 = new Typed('#MyExperience', {
-            strings: ['web designer','web developer','theme customizer', 'photographer', 'graphics designer'],
+            strings: ['web design and development','wordpress theme customization', 'photography', 'graphics design'],
             typeSpeed: 50,
             backSpeed: 150,
             smartBackspace: false, // this is a default

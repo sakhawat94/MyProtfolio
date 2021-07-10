@@ -13,6 +13,7 @@ body{
     position: absolute;
     top: 20px;
     right: 15%;
+    z-index: 99;
 }
 
 a.humberger-open-trigger i {
@@ -94,7 +95,6 @@ ul.humberger-socail-menu {
 ul.humberger-socail-menu li {
     display: inline-block;
     font-size: 30px;
-    /* margin-right: 15%; */
 }
 
 ul.humberger-socail-menu li:last-child {
@@ -112,6 +112,19 @@ ul.humberger-socail-menu li a {
 ul.humberger-socail-menu li a:hover {
     background: red;
     color: black;
+}
+.banner-main-wrapper{
+    position: relative;
+}
+.banner-section:before {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: aliceblue;
+    z-index: -1;
 }
 h4.banner-wellcome-tag {
     font-size: 30px;
@@ -137,4 +150,70 @@ h3.banner-experience span {
     color: #09b8ff;
     text-shadow: 1px 1px 1px rgba(0 0 0 /65%);
     font-weight: bolder;
+}
+a.scroll-down-trigger {
+    color: hotpink;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -40px;
+    background: linear-gradient(45deg, rgb(233, 244, 253), rgb(212, 232, 250));
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
+a.scroll-down-trigger i{
+    animation: topBottom 2s ease-in-out infinite;
+    position: absolute;
+    margin-left: -9px;
+}
+@keyframes topBottom{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 80%;
+    }
+}
+#about-section{
+    height: 100vh;
+}
+.aboutMe-heading {
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+h5.aboutMe-tag {
+    font-size: 17px;
+    line-height: 150%;
+    text-align: justify;
+    padding-right: 5%;
+}
+
+ul.about-me {
+    list-style: none;
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+ul.about-me li{
+    line-height: 200%;
+}
+
+ul.about-me li span:nth-child(1) {
+    color: darkred;
+    width: 30%;
+    display: inline-block;
+}
+a.download-CVtrigger {
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #0d6efd;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
 }
