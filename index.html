@@ -108,7 +108,30 @@
         </div>
     </section>
     <!-- language experience section End -->
-
+    <!-- education resume section start  -->
+    <section id="resume-section-wrapper">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 resume-menu-wrap">
+                        <ul id="resume-menu">
+                            <li><a href="#education">education</a></li>
+                            <li><a href="#experience">experience</a></li>
+                            <li><a href="#skills">skills</a></li>
+                            <li><a href="#awards">awards</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-9 resume-menu-details">
+                        <section id="education"></section>
+                        <section id="experience"></section>
+                        <section id="skills"></section>
+                        <section id="awards"></section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- education resume section end -->
 
 
 
@@ -135,27 +158,35 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/menuspy.min.js"></script>
     <script> 
         jQuery(document).ready(function(){
+            // humberger menu open trigger
             jQuery('.humberger-open-trigger').click(function(){
                 jQuery('.humberger-menu-wrapper').show('slow');
             });
+            // humberger menu close trigger
             jQuery('.humberger-close-trigger').click(function(){
                 jQuery('.humberger-menu-wrapper').hide('slow');
             });
+            // about section scroll down button
             jQuery('.scroll-down-trigger').click(function(){
                 var $targetsection = jQuery ('#about-section');
                 jQuery('body,html').animate({
                     scrollTop: $targetsection.offset().top-50
                 });                   
             });
+            // experience type writter
             var typed3 = new Typed('#MyExperience', {
             strings: ['web design and development','wordpress theme customization', 'photography', 'graphics design'],
             typeSpeed: 50,
             backSpeed: 150,
             smartBackspace: false, // this is a default
             loop: true
-            });
+            });  
+        // resume section spy scroll function
+        var elm = document.querySelector('#resume-menu');
+        var ms = new MenuSpy(elm);  
         });
     </script>
 </body>
